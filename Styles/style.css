@@ -669,3 +669,8 @@ body.dark-mode footer .dark-mode-switch label:hover {
   border-radius: 30% / 50%; /* L'ombrelle sera plus allongée, ce qui ressemble à une omelette */
   object-fit: cover;
 }
+@media (max-width: 770px) {
+  #hire-me-btn {
+    margin-bottom: 80px; /* Ajuste cette valeur selon l'espacement souhaité */
+  }
+}
