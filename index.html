@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Juba Yahiaoui</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="Styles/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            style="width: 100px; height: auto"
+          />
+          Portfolio
+        </a>
+
+        <!-- Navbar toggle button (hamburger) only visible on small screens and smaller -->
+        <button
+          class="nav-menu d-lg-none ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Capacities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Project</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact button (always visible) -->
+        <button
+          class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-lg-block"
+          id="scroll-to-contact-btn"
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div
+          class="col-10 col-md-6 text-center text-md-start"
+          data-aos="slide-right"
+        >
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Juba Yahiaoui</span>
+          </h2>
+          <p class="text-muted">
+            I am a second-year Web Developer Student at Sorbonne University
+          </p>
+          <button
+            class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+            id="hire-me-btn"
+          >
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-block">
+          <img
+            src="images/juba.png"
+            class="img-fluid w-100 d-md-none ome-image"
+            alt="Responsive Image"
+          />
+          <img
+            src="images/juba.png"
+            class="img-fluid d-none d-md-block ome-image"
+            alt="Responsive Image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                Skilled in creating elegant and functional websites, proficient
+                in HTML, CSS, and JavaScript to deliver intuitive and engaging
+                user experiences.
+              </p>
+              <a href="#" class="link read-more-link">Read More</a>
+              <div class="read-more-content" style="display: none">
+                <p>
+                  Skilled in creating elegant and functional websites,
+                  proficient in HTML, CSS, and JavaScript to deliver intuitive
+                  and engaging user experiences. Additionally, I have knowledge
+                  of Node.js and React, which allows me to build robust and
+                  dynamic websites. I also completed a web development course on
+                  <a
+                    href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                    target="_blank"
+                    style="color: #fca61f; text-decoration: none"
+                    >Udemy</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted">
+                Skilled in web development, using modern technologies to create
+                dynamic and high-performance web applications. Proficient in
+                HTML, CSS, and JavaScript for optimal user experiences.
+              </p>
+              <a href="#" class="link read-more-link">Read More</a>
+              <div class="read-more-content" style="display: none">
+                <p>
+                  In addition to HTML, CSS, and JavaScript, I have advanced
+                  skills in Node.js and React, allowing me to develop robust and
+                  scalable web applications. I completed a web development
+                  course with practical projects to refine my skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging / Solving Algorithm</h4>
+              <p class="text-muted">
+                Passionate about algorithms and solving complex problems, I have
+                developed strong skills in debugging and code optimization. My
+                interest in algorithmic problem-solving has led me to explore
+                various approaches to make code more efficient and robust.
+              </p>
+              <a href="#" class="link read-more-link">Read More</a>
+              <div class="read-more-content" style="display: none">
+                <p>
+                  In addition to my interest in algorithms, I am also passionate
+                  about different programming languages such as
+                  <span style="font-weight: bold">Java (object-oriented)</span>.
+                  I completed a comprehensive Python course on
+                  <a
+                    href="https://www.udemy.com/course/developpeur-python-formation-complete/"
+                    target="_blank"
+                    style="color: #fca61f; text-decoration: none"
+                    >Udemy</a
+                  >, where I was able to deepen my knowledge and gain practical
+                  skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">
+                  <img
+                    src="images/html-logo.png"
+                    alt="HTML Logo"
+                    class="skill-logo"
+                  />
+                  HTML & CSS
+                </span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">
+                  <img
+                    src="images/javascript-logo.png"
+                    alt="JavaScript Logo"
+                    class="skill-logo"
+                  />
+                  JavaScript
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">
+                  <img
+                    src="images/php-logo.png"
+                    alt="PHP Logo"
+                    class="skill-logo"
+                  />
+                  PHP
+                </span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">
+                  <img
+                    src="images/react-logo.png"
+                    alt="ReactJS Logo"
+                    class="skill-logo"
+                  />
+                  ReactJS
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Web Developer Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+              I am a student passionate about
+              <strong>computer science</strong> and
+              <strong>digital technologies</strong>. Currently in my
+              <strong
+                >second year of a Bachelor's degree in Computer Science</strong
+              >
+              at <strong>Sorbonne University</strong>, I have acquired solid
+              knowledge in <strong>web development</strong>,
+              <strong>algorithms</strong>, and <strong>systems</strong>.
+            </p>
+            <p class="text-muted">
+              My goal is to continue developing my technical skills while
+              applying my knowledge through
+              <strong>real-world projects</strong>. Alongside my studies, I am
+              constantly seeking to learn and take on new challenges to deepen
+              my understanding of <strong>emerging technologies</strong>.
+              Curious and determined, I am always on the lookout for
+              <strong>opportunities</strong> to grow as a
+              <strong>developer</strong> and contribute to
+              <strong>innovative</strong> projects.
+            </p>
+
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="./JubaCV.pdf"
+                download="SampleCV"
+                target="_blank"
+                class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+                style="
+                  text-decoration: none;
+                  color: #fff;
+                  display: inline-block;
+                "
+              >
+                Download CV
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Projects</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">
+          World Simulations
+        </button>
+        <button class="filter-item" data-filter="webapp">Automaton</button>
+        <button class="filter-item" data-filter="website">Portfolio</button>
+        <button class="filter-item" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div
+            class="post col-md-4 game all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img
+                src="images/simulation-python.png"
+                class="card-img-top"
+                alt="Genetic Algorithm"
+                data-link="https://are-dynamic-2024-g4.github.io/algo-genetique/"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Genetic Algorithm</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">Matplotlib</span>
+                <span class="badge bg-secondary badge-pill mb-2">PyGame</span>
+                <br />
+                <a href="#" class="link read-more-link">Read More</a>
+                <div class="read-more-content" style="display: none">
+                  <p>
+                    Project completed during the third semester of the computer
+                    science Bachelor's degree, using the
+                    <strong>Python</strong> language and the
+                    <strong>PyGame</strong> library. This project illustrates
+                    the genetic evolution of prey to adapt to their environment
+                    or escape from predators. Through an interactive visual
+                    simulation, it implements concepts such as natural
+                    selection, mutation, and behavioral adaptation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="post col-md-4 website all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img
+                src="images/portfilio.png"
+                class="card-img-top"
+                alt="Portfolio"
+                data-link="https://github.com/yourusername/portfolio"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Portfolio</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Php</span>
+                <br />
+                <a href="#" class="link read-more-link">Read More</a>
+                <div class="read-more-content" style="display: none">
+                  <p>
+                    Professional web development portfolio created to showcase
+                    my personal features and projects. This portfolio was
+                    designed using the
+                    <span style="font-weight: bold">HTML</span>,
+                    <span style="font-weight: bold">CSS</span>, and
+                    <span style="font-weight: bold">JavaScript</span> languages.
+                    It includes my practical work, academic and personal
+                    projects, as well as my skills in web development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="post col-md-4 webapp all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img
+                src="images/automaton.png"
+                class="card-img-top"
+                alt="Automata in Discrete Mathematics"
+                data-link="https://github.com/JubaYHI/Automates_mathes.git"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Automata in Discrete Mathematics</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">GraphViz</span>
+                <br />
+                <a href="#" class="link read-more-link">Read More</a>
+                <div class="read-more-content" style="display: none">
+                  <p>
+                    Project completed during the third semester of the computer
+                    science Bachelor's degree, using the
+                    <span style="font-weight: bold">Python</span> language. This
+                    Jupyter Notebook file explores various concepts in discrete
+                    mathematics applied to automata, such as transitions,
+                    states, and language recognition. A practical application of
+                    theoretical concepts through visualizations and interactive
+                    implementations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div
+            class="post col-md-4 game all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img
+                src="images/simulation-C.png"
+                class="card-img-top"
+                alt="Predateurs / Proies"
+                data-link="https://github.com/JubaYHI/world_sim_c"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Predateurs / Proies</h4>
+                <span class="badge bg-secondary badge-pill">C</span>
+                <span class="badge bg-secondary badge-pill">Gnuplot</span>
+                <br />
+                <a href="#" class="link read-more-link">Read More</a>
+                <div class="read-more-content" style="display: none">
+                  <p>
+                    Project completed during the third semester of the computer
+                    science Bachelor's degree, using the
+                    <strong>C</strong> language. This project involves
+                    programming a simple ecosystem simulation by manipulating
+                    data structures such as linked lists and a 2D array. The
+                    goal is to model a discrete world with prey, predators, and
+                    resources, while exploring the concept of equilibrium in an
+                    ecosystem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="post col-md-4 website all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Paris, France</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+33 602802185</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>jubafper@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>Coming soon...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobile"
+                  placeholder="Mobile No."
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">Capacities</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Projects</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button
+          class="rounded-pill github"
+          onclick="window.open('https://github.com/JubaYHI', '_blank');"
+        >
+          <i class="bi bi-github"></i>
+        </button>
+        <button
+          class="rounded-pill facebook"
+          onclick="window.open('https://www.facebook.com/juba.yahiaoui06/?locale=fr_FR', '_blank');"
+        >
+          <i class="bi bi-facebook"></i>
+        </button>
+        <button
+          class="rounded-pill linkedin"
+          onclick="window.open('https://www.linkedin.com/in/juba-yahiaoui-8a0a82278/', '_blank');"
+        >
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <div class="dark-mode-switch">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <label for="dark-mode-toggle" class="dark-mode-label">
+            <i class="bi bi-moon-fill"></i>
+          </label>
+        </div>
+      </div>
+
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="Script/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "j2PY_uIQS8LPhT9a_",
+        });
+      })();
+    </script>
+  </body>
+</html>

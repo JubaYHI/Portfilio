@@ -1,0 +1,671 @@
+html,
+body {
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+/* appling google font over the website  */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+/* styling menu icon */
+.nav-menu {
+  border: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #fca61f;
+}
+/* styling navbar links  */
+.navbar-nav a {
+  color: black;
+  position: relative;
+}
+.navbar-nav a:hover {
+  color: #fca61f;
+}
+.navbar-nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  top: 35px;
+  position: absolute;
+  background: #fca61f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* styling contact btn  */
+s .c-btn {
+  border: none;
+  background: #fca61f;
+  color: #fff;
+  font-size: 1.2rem;
+}
+/* styling home section starts */
+.home {
+  background: linear-gradient(
+    33deg,
+    rgba(242, 242, 255, 1) 0%,
+    rgba(235, 249, 255, 1) 100%
+  );
+  padding: 30px 0px 10px 0px;
+}
+.home h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.c-orange {
+  color: #6f34fe;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.home p {
+  width: fit-content;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.h-btn:hover {
+  background: #6f34fe;
+  color: #fff;
+  transform: translateY(-20px);
+  transition-duration: 1s;
+}
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fca61f;
+  position: relative;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 20px;
+  background-color: #6f34fe;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.link:hover {
+  color: #6f34fe;
+}
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* adding animation to home section image  */
+.home img {
+  animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-24px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* expertise section starts */
+.heading small {
+  color: #6f34fe;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.heading h3 {
+  margin-top: 0.5rem;
+  color: #3f396d;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.expertise h4 {
+  color: #3f396d;
+  font-weight: 700;
+}
+.expertise a {
+  text-decoration: none;
+  color: #fca61f;
+}
+.expertise a:hover {
+  color: #6f34fe;
+}
+.expertise .service-card {
+  text-align: center;
+  padding: 15px 15px;
+  border-radius: 0.7rem;
+}
+
+/* skill section starts */
+.skill {
+  background-color: rgb(234, 234, 249);
+}
+.progress-card {
+  padding: 12% 10% 10% 15%;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10%;
+}
+.progress-card:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.6s;
+}
+.circular-progress {
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-value {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.html-progress {
+  color: #fca61f;
+}
+.javascript-progress {
+  color: #6f34fe;
+}
+.php-progress {
+  color: #20c997;
+}
+.reactjs-progress {
+  color: #3f396d;
+}
+.text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.heading p {
+  font-size: 1.3rem;
+}
+
+/* portfolio section starts */
+#myBtnContainer {
+  margin-bottom: 45px;
+}
+#myBtnContainer button {
+  border: none;
+  color: black;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 25px;
+}
+#myBtnContainer button:hover {
+  color: #fca61f;
+}
+
+#myBtnContainer button:focus {
+  outline: none;
+}
+.post .content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.post .card {
+  border: none;
+}
+
+/* testimonial section starts */
+.testimonial img:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1s;
+}
+.testimonial h4 {
+  color: #3f396d;
+}
+.testimonial i {
+  font-size: 2.9rem;
+  color: #fca61f;
+}
+.testimonial .nextprev-btn {
+  border: none;
+  background-color: #fff;
+}
+.prev:hover,
+.prev-btn:hover {
+  color: #6f34fe;
+  transform: translateX(-10px);
+  transition-duration: 1s;
+}
+.next:hover,
+.next-btn:hover {
+  color: #6f34fe;
+  transform: translateX(10px);
+  transition-duration: 1s;
+}
+
+/* blog section starts */
+.blog {
+  background-color: #f2f2ff;
+}
+.blog .blogpost .card {
+  border: none;
+  border-radius: 5%;
+}
+.nav-bg {
+  background-color: #fff;
+}
+
+.blog .blogpost small {
+  color: #6f34fe;
+  font-size: 1.1rem;
+}
+.blog .blogpost h4,
+.blogpost a {
+  color: #3f396d;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.blogpost a:hover {
+  color: #fca61f;
+}
+.blog .blogpost .read-more-btn {
+  text-decoration: none;
+  color: #fca61f;
+  font-size: 1.1rem;
+}
+.blog .blogpost .read-more-btn:hover {
+  color: #6f34fe;
+}
+/* styling modal group  */
+.btn-c {
+  margin-left: 94%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: -3%;
+}
+.btn-c i {
+  color: #fca61f;
+}
+.modal-body .content span {
+  font-size: 1rem;
+}
+.modal-body .content small {
+  font-size: 1rem;
+  color: #6f34fe;
+}
+/* contact section starts */
+.contact {
+  background-color: #f3f3f3;
+}
+.contact-details i {
+  font-size: 1.5rem;
+  color: #fca61f;
+}
+.contact-details p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #fca61f;
+}
+.contact-form .form-control {
+  padding: 10px 10px;
+  width: 80%;
+}
+
+/* footer section starts */
+footer {
+  background-color: #211e39;
+}
+
+footer .link-group a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+footer .link-group a:hover {
+  color: #fca61f;
+}
+.social-links button {
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 14px 15px 10px 15px;
+}
+
+.social-links .github {
+  color: #333;
+}
+
+.social-links .facebook {
+  color: #3b5998;
+}
+
+.social-links .linkedin {
+  color: #0077b5;
+}
+
+.social-links button:hover {
+  color: #fff;
+  transform: translateY(-20px);
+  transition-duration: 1s;
+}
+
+.social-links .github:hover {
+  background-color: #333;
+}
+
+.social-links .facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-links .linkedin:hover {
+  background-color: #0077b5;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 1.4rem;
+  background-color: #fca61f;
+  color: #fff;
+  animation: pulse 3s infinite;
+}
+
+.skill-logo {
+  width: 160px;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+/* Styling all buttons to appear in yellow */
+
+button,
+.c-btn {
+  background-color: #fca61f;
+  color: #fff;
+  border: none;
+}
+
+button:hover,
+.c-btn:hover {
+  background-color: #6f34fe;
+  color: #fff;
+}
+
+/* Dark Mode Switch Styling */
+.dark-mode-switch {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-switch input[type="checkbox"] {
+  display: none;
+}
+
+.dark-mode-switch label {
+  background-color: #fca61f;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  width: 60px;
+  transition: background-color 0.3s;
+}
+
+.dark-mode-switch label:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  top: 3px;
+  transition: transform 0.3s;
+}
+
+.dark-mode-switch input:checked + label {
+  background-color: #6f34fe;
+}
+
+.dark-mode-switch input:checked + label:before {
+  transform: translateX(30px);
+}
+
+.dark-mode-label i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .card,
+body.dark-mode .contact-form,
+body.dark-mode .portfolio-body,
+body.dark-mode .testimonial,
+body.dark-mode .blog,
+body.dark-mode .social-links button {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn,
+body.dark-mode .c-btn {
+  background-color: #6f34fe;
+  color: #fff;
+  border: none;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .c-btn:hover {
+  background-color: #4a259c;
+}
+
+body.dark-mode .link,
+body.dark-mode .navbar-nav a {
+  color: #fca61f;
+}
+
+body.dark-mode .link:hover,
+body.dark-mode .navbar-nav a:hover {
+  color: #6f34fe;
+}
+
+/* Add styles for invalid input fields */
+input:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+.invalid-feedback {
+  color: red;
+  display: none;
+}
+input:invalid + .invalid-feedback,
+textarea:invalid + .invalid-feedback {
+  display: block;
+}
+
+/* Add styles for invalid input fields */
+input:invalid:focus,
+textarea:invalid:focus {
+  border-color: red;
+}
+
+.invalid-feedback {
+  color: red;
+  display: none;
+}
+
+input:invalid:focus + .invalid-feedback,
+textarea:invalid:focus + .invalid-feedback {
+  display: block;
+}
+
+/* Add styles for invalid input fields */
+input:invalid:focus,
+textarea:invalid:focus {
+  border-color: red;
+}
+
+/* Dark Mode Navbar */
+body.dark-mode .navbar {
+  background-color: #1e1e1e !important; /* Fond sombre */
+  color: #e0e0e0;
+}
+body.dark-mode .navbar a.nav-link {
+  color: #fca61f !important; /* Liens en jaune */
+}
+body.dark-mode .navbar a.nav-link:hover {
+  color: #6f34fe !important; /* Liens en violet au survol */
+}
+
+/* Contact section - Dark Mode */
+body.dark-mode .contact {
+  background-color: #1e1e1e; /* Fond noir pour la section */
+  color: #e0e0e0; /* Couleur du texte général */
+}
+
+body.dark-mode .contact .heading h3 {
+  color: #6f34fe; /* Titre principal en violet */
+}
+
+body.dark-mode .contact .contact-details p {
+  color: #e0e0e0; /* Texte des détails en blanc */
+}
+
+body.dark-mode .contact .contact-details i {
+  color: #fca61f; /* Icônes en jaune */
+}
+
+body.dark-mode .contact .contact-form {
+  background-color: #121212; /* Fond noir pour le formulaire */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Légère ombre */
+}
+
+body.dark-mode .contact .contact-form input,
+body.dark-mode .contact .contact-form textarea {
+  background-color: #1e1e1e; /* Fond des champs noir */
+  color: #e0e0e0; /* Texte des champs blanc */
+  border: 1px solid #6f34fe; /* Bordure violette */
+}
+
+body.dark-mode .contact .contact-form input::placeholder,
+body.dark-mode .contact .contact-form textarea::placeholder {
+  color: #aaa; /* Placeholder en gris clair */
+}
+
+body.dark-mode .contact .contact-form input:focus,
+body.dark-mode .contact .contact-form textarea:focus {
+  border-color: #fca61f; /* Bordure jaune au focus */
+  outline: none; /* Retirer l'effet par défaut */
+}
+
+body.dark-mode .contact .c-btn {
+  background-color: #6f34fe; /* Bouton violet */
+  color: #fff; /* Texte blanc */
+}
+
+body.dark-mode .contact .c-btn:hover {
+  background-color: #4a259c; /* Couleur plus foncée au survol */
+}
+
+/* Footer en mode sombre */
+body.dark-mode footer {
+  background-color: #6f34fe; /* Fond violet */
+  color: #ffffff; /* Texte en blanc */
+}
+
+/* Liens dans le footer en mode sombre */
+body.dark-mode footer a {
+  color: #ffffff; /* Liens en blanc */
+}
+
+body.dark-mode footer a:hover {
+  text-decoration: underline; /* Soulignement des liens au survol */
+}
+
+/* Boutons des réseaux sociaux */
+body.dark-mode footer .social-links button {
+  background-color: transparent; /* Conserve le fond transparent */
+  color: #ffffff; /* Icônes en blanc */
+  border: none; /* Pas de bordure */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+body.dark-mode footer .social-links button:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+  opacity: 0.9; /* Légère transparence */
+}
+
+/* Bouton de changement de mode */
+body.dark-mode footer .dark-mode-switch label {
+  color: #ffffff; /* Icône de la lune en blanc */
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+body.dark-mode footer .dark-mode-switch label:hover {
+  transform: rotate(20deg); /* Rotation au survol */
+}
+
+#navbar-top {
+  transition: top 0.3s;
+}
+
+.ome-image {
+  border-radius: 30% / 50%; /* L'ombrelle sera plus allongée, ce qui ressemble à une omelette */
+  object-fit: cover;
+}
